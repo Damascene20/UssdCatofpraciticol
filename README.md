@@ -1,6 +1,5 @@
 Rwanda Polytechnic Student Registration and Payment System
 This PHP-based system allows students to register for Rwanda Polytechnic (RP) colleges and make payments via USSD interface. The registration process involves selecting a college, department, and providing personal details, followed by a payment process to complete the registration.
-
 Features
 College and Department Selection: Students can select a college and department from the list provided.
 Student Registration: Collects student details such as full name, ID card number, phone number, email, and password.
@@ -33,15 +32,8 @@ Web server (e.g., Apache or Nginx)
 Composer (for dependency management, if needed)
 Installation Steps
 Clone or download the repository:
-
-bash
-Copy code
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git remote add origin https://github.com/Damascene20/UssdCatofpraciticol.git
 Set up the Database: Create a database rp_student_registration and set up the following tables:
-
-sql
-Copy code
 CREATE TABLE students (
     id INT AUTO_INCREMENT PRIMARY KEY,
     college VARCHAR(255),
@@ -65,7 +57,6 @@ Configure the Database: Update the connectDatabase function in the PHP code with
 Deploy to a Web Server: Place the PHP code in the web server's document root (e.g., /var/www/html for Apache).
 
 Test the System: Open the application via a browser or a tool that can simulate USSD (e.g., a web-based USSD emulator).
-
 Usage
 Initial Menu: Displays the main menu with available colleges.
 Registration Flow: Guides the user through selecting a college, department, and entering their personal information.
